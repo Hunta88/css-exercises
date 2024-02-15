@@ -12,8 +12,7 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
-  display: flex;
-  justify-content: space-around;
+
 }
 
 .profile-image {
@@ -21,7 +20,7 @@ body {
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
   border-radius: 50%;
   width: 48px;
-  height: 48px;
+  height:  48px;
 }
 
 .logo {
@@ -48,16 +47,18 @@ a {
 ul {
   list-style-type: none;
   display: flex;
-  justify-content: left;
-  gap:8px;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-.header-left {
+.header-left, .header-right {
   display: flex;
-  justify-content: left;
-}
-
-.header-right {
-  display: flex;
-  justify-content: right;
+  align-items: center;
+  gap: 16px;
 }
